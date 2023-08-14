@@ -1,0 +1,18 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Spring-OAuth2-Client-GitHub-Demo
+
+  security:
+    ### USER CREDENTIALS FOR LOGIN WITH DEFAULT FORM ###
+    user:
+      name: admin
+      password: p4$$w0rd
+    oauth2:
+      client:
+        registration:
+          github.client-id: ${GITHUB_CLIENT_ID}
+          github.client-secret: ${GITHUB_CLIENT_SECRET}
